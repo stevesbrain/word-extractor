@@ -1,11 +1,15 @@
+#Overview
 This bit of software takes elements from the Python DOCX project (https://pypi.python.org/pypi/docx)
 Specifically, the docx.py module. I've left the majority of this intact for the sake of use of other
  functions or areas.
 
+##Preparation
  Essentially, to get started, if on a debian system, first:
  sudo apt-get install libxml2-dev libxslt1-dev
 
  Then:
  sudo pip install lxml pillow
 
+
+##Usage
 ./documenter.py /path/to/folder/with/docs
