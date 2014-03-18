@@ -10,6 +10,7 @@ import sys
 from docx import opendocx, getdocumenttext
 #Grab our dir_list function
 import dir_list
+phrase = input("What phrase do you wish to seach for? ")
 
 #List variable is the actual list send back of directories from our dir_list module
 list = dir_list.listing(sys.argv[1])
@@ -20,5 +21,7 @@ for listing in list:
     document = opendocx(listing)
     #Grab text from opened document
     textlist = getdocumenttext(document)
+    if any(phrase in s for s in textlist):
+        print(phrase, "found in ", listing)
     #Print text, followed by document title
-    print(textlist, "FILENAME: ", listing)
+    #print(textlist, "FILENAME: ", listing)
