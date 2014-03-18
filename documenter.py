@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
+# Sorry this is not very feature heavy at the moment guys, it's a bit of a quick "hack-job" to help with
+# some data recovery for a user
 # FIXME Return usage if no argument is provided
+# FIXME Change so that you can choose to display all text, or search for specific text in a file
 
 #Import our modules
 import sys
