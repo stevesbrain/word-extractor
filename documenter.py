@@ -21,7 +21,8 @@ for listing in list:
     document = opendocx(listing)
     #Grab text from opened document
     textlist = getdocumenttext(document)
-    if any(phrase in s for s in textlist):
+    #Search for the phrase case insensitively
+    if any(phrase in s.lower() for s in textlist):
         print(phrase, "found in ", listing)
     #Print text, followed by document title
     #print(textlist, "FILENAME: ", listing)
