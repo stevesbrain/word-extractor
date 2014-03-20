@@ -13,10 +13,10 @@ import dir_list
 phrase = input("What phrase do you wish to seach for? ")
 
 #List variable is the actual list send back of directories from our dir_list module
-list = dir_list.listing(sys.argv[1])
+item_list = dir_list.listing(sys.argv[1])
 
 #For each item in our list, spit out the contents of said document
-for listing in list:
+for listing in item_list: #  Shouldn't shadow builtin names & statments
     #Open the document from listing
     document = opendocx(listing)
     #Grab text from opened document
