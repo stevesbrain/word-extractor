@@ -1,6 +1,7 @@
 import os
 
 def listing(target):
+    """Lists all files in the target directory"""
     #Create our list for later returns
     files=[]
     #For all the stuff in our target
